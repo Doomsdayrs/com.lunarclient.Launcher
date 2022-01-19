@@ -25,8 +25,8 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://launcherupdates.lunarclientcdn.com/Lunar%20Client-2.8.4.AppImage
-        sha256: 432c0705f0c281cecccf60296df9957e4895a1a4d14df7dbca5016d3038257f5
+        url: https://launcherupdates.lunarclientcdn.com/Lunar%20Client-2.9.3.AppImage
+        sha256: db0942f8e006da5bd4077c8fc69a4d861bcd0d9bf8831acd2a9c30f6f01f4ad2
       - type: script
         dest-filename: lunarclient
         commands:
@@ -36,7 +36,7 @@ modules:
       - type: file
         path: com.lunarclient.Launcher.desktop
     build-commands:
-      - chmod +x Lunar%20Client-2.8.4.AppImage
+      - chmod +x Lunar%20Client-2.9.3.AppImage
       - ./Lunar%20Client-2.8.4.AppImage --appimage-extract
 
       - mkdir "${FLATPAK_DEST}/lunarclient"
